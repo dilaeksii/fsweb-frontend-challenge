@@ -1,11 +1,19 @@
+import data from "../data/data.json"
+import { useSetting } from "../SettingsContext";
+
 export const Footer = () => {
+
+  const {language} = useSetting();
+
+  const lang = data[language];
+
   return (
     <>
-      <div className="h-[409px] bg-[#F9F9F9] max-sm:h-full">
+      <div className="h-[409px] max-sm:h-full" id="footer">
         <p className="w-[540px] text-[#1F2937] h-[106px] font-semibold text-[42px] leading-[1.2] pl-[125px] pt-20 max-sm:w-40 max-sm:pl-2">
-          Let’s work together on your next product.
+          {lang.footer}
         </p>
-        <div className="pl-[125px] pt-30 flex justify-between max-sm:pl-2 max-sm:pt-80 max-sm:flex-col max-sm:gap-5">
+        <div className="pl-[125px] pt-40 flex justify-between max-sm:pl-2 max-sm:pt-80 max-sm:flex-col max-sm:gap-5">
           <div>
             👉{" "}
             <a

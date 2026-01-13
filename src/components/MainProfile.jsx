@@ -28,7 +28,7 @@ export const MainProfile = () => {
                   href="#"
                   className="h-12 inline-flex items-center gap-2 rounded-lg border border-[#3730A3] px-5 font-medium text-[#3730A3] hover:bg-[#3730A3] hover:text-white max-sm:w-32"
                 >
-                  Hire Me
+                  {lang.hire}
                 </a>
 
                 <a

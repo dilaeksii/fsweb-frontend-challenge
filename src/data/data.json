@@ -11,7 +11,15 @@
         "role": "Preferred Role",
         "project1": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "view": "View Page",
-        "projects": "Projects"
+        "projects": "Projects",
+        "footer": "Let’s work together on your next product.",
+        "skills": "Skills",
+        "hire": "Hire Me",
+        "uni": "Hacettepe University, Biology Bachelor's Degree, 2016",
+        "javasc": "I write clean, readable, and maintainable JavaScript for modern web applications, focusing on performance and user experience.",
+        "react": "I build scalable and user-focused interfaces using a component-based architecture.",
+        "node": "I develop simple and efficient backend solutions to support frontend applications.",
+        "desc": "I am a frontend-focused developer with an interest in web design. I value creating clean, functional interfaces centered around user experience and continuously improve myself by following new technologies."
     },
     "tr": {
         "title1": "Yaratıcı düşünen",
@@ -25,6 +33,14 @@
         "role": "Tercih Edilen Rol",
         "project1": "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak sunulmaktadır ve Git deposu sayesinde kod ve tema üzerinde her türlü özelleştirme mümkündür.",
         "view": "Sayfayı Görüntüle",
-        "projects": "Projeler"
+        "projects": "Projeler",
+        "footer": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+        "skills":  "Yetenekler",
+        "hire": "İşe Al",
+        "uni": "Hacettepe Ünv. Biyoloji Lisans, 2016",
+        "javasc": "Modern web uygulamaları için temiz, okunabilir ve sürdürülebilir JavaScript kodları yazıyorum. Performans ve kullanıcı deneyimini ön planda tutarım.",
+        "react": "Bileşen tabanlı mimariyle ölçeklenebilir ve kullanıcı odaklı arayüzler geliştiriyorum.",
+        "node": "Frontend projelerini destekleyecek basit ve verimli backend çözümleri geliştiriyorum.",
+        "desc": "Web tasarımı ve frontend geliştirme alanına odaklanan bir geliştiriciyim. Kullanıcı deneyimini merkeze alan, sade ve işlevsel arayüzler tasarlamayı önemsiyorum. Yeni teknolojileri takip ederek kendimi sürekli geliştirmeye çalışıyorum."
     }
 }

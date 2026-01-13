@@ -1,1 +1,21 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: white;
+    color: #0f172a; /* slate-900 */
+  }
+
+  html.dark body {
+    background-color: #020617; /* slate-950 */
+    color: #e5e7eb; /* slate-200 */
+  }
+
+  #footer {
+    background-color: #F9F9F9;
+  }
+
+  html.dark #footer {
+    background-color: #0f172a;
+  }
+}

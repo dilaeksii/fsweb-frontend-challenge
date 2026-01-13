@@ -19,20 +19,20 @@ export const Profile = () => {
               {lang.profile}
             </h1>
             <div className="grid grid-cols-2 items-start">
-              <p className="font-semibold text-lg">{lang.date}</p>
-              <p className="text-lg">{profile.date}</p>
+              <p className="font-semibold text-lg text-[#6B7280]">{lang.date}</p>
+              <p className="text-lg text-[#6B7280]">{profile.date}</p>
             </div>
             <div className="grid grid-cols-2 items-start">
-              <p className="font-semibold text-lg">{lang.place}</p>
-              <p className="text-lg">{profile.place}</p>
+              <p className="font-semibold text-lg text-[#6B7280]">{lang.place}</p>
+              <p className="text-lg text-[#6B7280]">{profile.place}</p>
             </div>
              <div className="grid grid-cols-2 items-start">
-              <p className="font-semibold text-lg">{lang.education}</p>
-              <p className="text-lg">Hacettepe Ünv. Biyoloji Lisans, 2016</p>
+              <p className="font-semibold text-lg text-[#6B7280]">{lang.education}</p>
+              <p className="text-lg text-[#6B7280]">{lang.uni}</p>
             </div>
             <div className="grid grid-cols-2 items-start">
-              <p className="font-semibold text-lg">{lang.role}</p>
-              <p className="text-lg">{profile.role}</p>
+              <p className="font-semibold text-lg text-[#6B7280]">{lang.role}</p>
+              <p className="text-lg text-[#6B7280]">{profile.role}</p>
             </div>
           </div>
           <div className="w-[576px] h-[182px] max-sm:w-full">
@@ -40,12 +40,7 @@ export const Profile = () => {
               {lang.aboutme}
             </h1>
             <p className="text-[#6B7280] font-normal text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-              aut, odit laborum aliquam voluptatum nisi mollitia.
-            </p><br/>
-            <p className="text-[#6B7280] font-normal text-lg">
-              Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-              deserunt quam temporibus cumque magnam!
+              {lang.desc}
             </p>
           </div>
         </div>

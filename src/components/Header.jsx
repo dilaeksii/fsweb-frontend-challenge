@@ -1,6 +1,12 @@
 import profile from "../data/profile.json"
+import data from "../data/data.json"
+import { useSetting } from "../SettingsContext";
 
 export const Header = () => {
+  const {language} = useSetting();
+
+  const lang = data[language];
+
   return (
     <>
       <div className="flex justify-between pt-3 max-sm:justify-center max-sm:gap-10">
@@ -14,21 +20,21 @@ export const Header = () => {
           href="#"
           className="font-medium text-[#6B7280]"
         >
-          Skills
+          {lang.skills}
         </a>
 
         <a
           href="#"
           className="font-medium text-[#6B7280]"
         >
-          Profile
+          {lang.profile}
         </a>
 
         <a
           href="#"
           className="font-medium text-[#3730A3] border border-[#3730A3] rounded-lg px-4 py-1"
         >
-          Hire Me
+          {lang.hire}
         </a>
       </div>
       </div>
