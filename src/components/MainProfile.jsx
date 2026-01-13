@@ -1,7 +1,12 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import profile from "../data/profile.json"
+import { useSetting } from "../SettingsContext";
+import data from "../data/data.json"
 
 export const MainProfile = () => {
+  const {language} = useSetting();
+
+  const lang = data[language];
   return (
     <>
       <section className="w-full">
@@ -13,12 +18,10 @@ export const MainProfile = () => {
                 <span className="text-[#4338CA] font-medium">{profile.name}</span>
               </div>
               <h1 className="mt-8 text-[72px] leading-[1.05] font-bold text-[#111827] max-sm:text-[62px]">
-                Creative thinker <br /> Minimalism lover
+                {lang.title1} <br /> {lang.title2}
               </h1>
               <p className="mt-6 max-w-[520px] text-[#6B7280] leading-7">
-                Hi, I’m Almila. I’m a full-stack developer. If you are looking
-                for a Developer who to craft solid and scalable frontend
-                products with great user experiences. Let’s shake hands with me.
+                {lang.about}
               </p>
               <div className="mt-10 flex items-center gap-4 max-sm:flex-col max-sm:items-start">
                 <a

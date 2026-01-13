@@ -1,21 +1,16 @@
 import { useState } from "react";
+import { useSetting } from "../SettingsContext";
 
 
 export const Mode = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState("tr");
+  
+  const {changeLang, language} = useSetting();
 
   const handleModeChange = () => {
     setDarkMode(!darkMode);
   };
 
-  const handleLangClick = () => {
-    setLanguage((prev) => {
-       return prev === "tr" ? "en" : "tr";
-    })
-  }
-
-  
 
   return (
     <>
@@ -45,7 +40,7 @@ export const Mode = () => {
         </div>
         <span className="text-gray-500 text-base font-bold max-sm:text-sm">|</span>
         <div>
-          <button className="text-violet-800 text-base font-bold max-sm:text-sm" onClick={handleLangClick}>{language === "tr" ? "İNGİLİZCE" : "TÜRKÇE"}</button><span className="text-gray-500 text-base font-bold">'YE GEÇ</span> 
+          <button className="text-violet-800 text-base font-bold max-sm:text-sm" onClick={changeLang}>{language === "tr" ? "İNGİLİZCE" : "TÜRKÇE"}</button><span className="text-gray-500 text-base font-bold">'YE GEÇ</span> 
         </div>
       </div>
     </>
