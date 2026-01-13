@@ -1,11 +1,13 @@
+import profile from "../data/profile.json"
+
 export const Projects = () => {
   return (
     <>
-      <div className="mx-auto max-w-[1140px] pt-5 border-t border-[#BAB2E7] w-[1140px] pb-15">
+      <div className="pt-5 border-t border-[#BAB2E7] pb-15 max-sm:h-full max-sm:pt-2">
         <h1 className="font-semibold text-[#1F2937] leading-[1.5] text-5xl">
           Projects
         </h1>
-        <div className="grid grid-cols-3 pt-3 gap-y-15 gap-x-10">
+        <div className="grid grid-cols-3 pt-3 gap-y-15 gap-x-10 max-sm:flex max-sm:flex-col">
           <div className="w-[300px]">
             <img src="src/images/project-1.png" alt="Project1" />
             <p className="text-[#4338CA] text-3xl font-medium py-3">Workintech</p>
@@ -22,7 +24,7 @@ export const Projects = () => {
                 <p className="border rounded-sm border-[#3730A3] py-[6px] px-[18px] text-[#3730A3]">axios</p>
             </div>
             <div className="flex justify-between py-3">
-                <a href="https://github.com/dilaeksii" target="_blank" className="text-[#3730A3] underline">Github</a>
+                <a href={profile.github} target="_blank" className="text-[#3730A3] underline">Github</a>
                 <a href="#" className="text-[#3730A3] underline">View Page</a>
             </div>
           </div>
@@ -42,7 +44,7 @@ export const Projects = () => {
                 <p className="border rounded-sm border-[#3730A3] py-[6px] px-[18px] text-[#3730A3]">axios</p>
             </div>
             <div className="flex justify-between py-3">
-                <a href="https://github.com/dilaeksii" target="_blank" className="text-[#3730A3] underline">Github</a>
+                <a href={profile.github} target="_blank" className="text-[#3730A3] underline">Github</a>
                 <a href="#" className="text-[#3730A3] underline">View Page</a>
             </div>
           </div>
@@ -62,7 +64,7 @@ export const Projects = () => {
                 <p className="border rounded-sm border-[#3730A3] py-[6px] px-[18px] text-[#3730A3]">axios</p>
             </div>
             <div className="flex justify-between py-3">
-                <a href="https://github.com/dilaeksii" target="_blank" className="text-[#3730A3] underline">Github</a>
+                <a href={profile.github} target="_blank" className="text-[#3730A3] underline">Github</a>
                 <a href="#" className="text-[#3730A3] underline">View Page</a>
             </div>
           </div>

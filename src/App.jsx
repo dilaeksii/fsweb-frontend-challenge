@@ -10,7 +10,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
-      <div>
+      <div className="mx-auto w-full max-w-screen-xl px-4 max-sm:px-4 max-sm:overflow-x-hidden">
         <Mode />
         <Header />
         <MainProfile/>

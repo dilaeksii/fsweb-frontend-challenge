@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export const Mode = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("tr");
@@ -14,9 +15,11 @@ export const Mode = () => {
     })
   }
 
+  
+
   return (
     <>
-      <div className="flex gap-2 p-2 justify-end mx-auto max-w-[1140px]">
+      <div className="flex gap-2 p-2 justify-end max-sm:justify-end max-sm:py-8">
         <div>
         <label className="relative inline-flex items-center cursor-pointer">
           <input
@@ -35,14 +38,14 @@ export const Mode = () => {
               }}
             />
           </div>
-          <span className="text-gray-500 text-base font-bold pl-2">
+          <span className="text-gray-500 text-base font-bold pl-2 max-sm:text-sm">
             DARK MODE
           </span>
         </label> 
         </div>
-        <span className="text-gray-500 text-base font-bold">|</span>
+        <span className="text-gray-500 text-base font-bold max-sm:text-sm">|</span>
         <div>
-          <button className="text-violet-800 text-base font-bold" onClick={handleLangClick}>{language === "tr" ? "İNGİLİZCE" : "TÜRKÇE"}</button><span className="text-gray-500 text-base font-bold">'YE GEÇ</span> 
+          <button className="text-violet-800 text-base font-bold max-sm:text-sm" onClick={handleLangClick}>{language === "tr" ? "İNGİLİZCE" : "TÜRKÇE"}</button><span className="text-gray-500 text-base font-bold">'YE GEÇ</span> 
         </div>
       </div>
     </>
