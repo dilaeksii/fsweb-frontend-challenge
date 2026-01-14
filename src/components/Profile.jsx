@@ -3,9 +3,9 @@ import { useSetting } from "../SettingsContext";
 import data from "../data/data.json"
 
 export const Profile = () => {
-  const {language} = useSetting();
+  const {state} = useSetting();
 
-  const lang = data[language];
+  const lang = data[state.language];
 
   return (
     <>

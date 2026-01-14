@@ -4,10 +4,10 @@ import projects from "../data/projects.json";
 import { useSetting } from "../SettingsContext";
 
 export const Projects = () => {
-  const { language } = useSetting();
+  const { state } = useSetting();
 
-  const lang = data[language];
-  const projectList = projects[language].project;
+  const lang = data[state.language];
+  const projectList = projects[state.language].project;
 
   return (
     <>

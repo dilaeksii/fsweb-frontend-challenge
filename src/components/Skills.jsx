@@ -3,10 +3,10 @@ import { useSetting } from "../SettingsContext";
 import skills from "../data/skills.json";
 
 export const Skills = () => {
-  const { language } = useSetting();
+  const { state } = useSetting();
 
-  const lang = data[language];
-  const skillsList = skills[language].skill;
+  const lang = data[state.language];
+  const skillsList = skills[state.language].skill;
 
   return (
     <>

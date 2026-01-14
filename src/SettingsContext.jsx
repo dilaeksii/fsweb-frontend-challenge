@@ -1,28 +1,34 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useReducer } from "react";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { createContext } from "react";
+import { initialState, settingsReducer } from "./store/reducers";
+import { setLanguage, toggleDarkMode } from "./store/actions";
 
 const SettingsContext = createContext();
 
 export const SettingsProvider = ({ children }) => {
-  const [language, setLanguage] = useLocalStorage("lang", "tr");
-  const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
+ 
+
+  const [settings, setSettings] = useLocalStorage("settings", initialState);
+  const [state, dispatch] = useReducer(settingsReducer, settings);
+
+  useEffect(() => {
+    setSettings(state);
+  }, [state]);
 
   const changeLang = () => {
-    setLanguage((prev) => {
-      return prev === "tr" ? "en" : "tr";
-    });
+    dispatch(setLanguage(state.language === "tr" ? "en" : "tr"));
   };
 
   const changeMode = () => {
-    setDarkMode(prev => !prev);
+    dispatch(toggleDarkMode())
   };
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-  }, [darkMode]);
+    document.documentElement.classList.toggle("dark", state.darkMode);
+  }, [state.darkMode]);
 
-  const value = { language, changeLang, changeMode, darkMode };
+  const value = { state, changeLang, changeMode };
 
   return (
     <SettingsContext.Provider value={value}>

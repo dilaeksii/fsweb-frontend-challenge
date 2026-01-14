@@ -3,9 +3,9 @@ import { useSetting } from "../SettingsContext";
 
 export const Footer = () => {
 
-  const {language} = useSetting();
+  const {state} = useSetting();
 
-  const lang = data[language];
+  const lang = data[state.language];
 
   return (
     <>
