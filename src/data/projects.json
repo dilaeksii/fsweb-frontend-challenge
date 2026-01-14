@@ -1,0 +1,53 @@
+{
+    "en": {
+        "project": [
+            {
+                "id": 1,
+                "title": "Workintech",
+                "desc": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-1.png"
+            },
+            {
+                "id": 2,
+                "title": "Random Jokes",
+                "desc": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-2.png"
+            },
+            {
+                "id": 3,
+                "title": "Journey",
+                "desc": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-3.png"
+            }
+        ]
+    },
+
+    "tr": {
+        "project": [
+            {
+                "id": 1,
+                "title": "Workintech",
+                "desc": "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak sunulmaktadır ve Git deposu sayesinde kod ve tema üzerinde her türlü özelleştirme mümkündür.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-1.png"
+            },
+            {
+                "id": 2,
+                "title": "Random Jokes",
+                "desc": "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak sunulmaktadır ve Git deposu sayesinde kod ve tema üzerinde her türlü özelleştirme mümkündür.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-2.png"
+            },
+            {
+                "id": 3,
+                "title": "Journey",
+                "desc": "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak sunulmaktadır ve Git deposu sayesinde kod ve tema üzerinde her türlü özelleştirme mümkündür.",
+                "tech": ["react", "redux", "axios"],
+                "img": "src/images/project-3.png"
+            }
+        ]
+    }
+}

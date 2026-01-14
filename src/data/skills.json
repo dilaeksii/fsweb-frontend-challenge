@@ -1,0 +1,40 @@
+{
+    "en": {
+        "skill": [
+            {
+                "id": 1,
+                "title": "Java Script",
+                "desc": "I write clean, readable, and maintainable JavaScript for modern web applications, focusing on performance and user experience."
+            },
+            {
+                "id": 2,
+                "title": "React.JS",
+                "desc": "I build scalable and user-focused interfaces using a component-based architecture."
+            },
+            {
+                "id": 3,
+                "title": "Node.JS",
+                "desc": "I develop simple and efficient backend solutions to support frontend applications."
+            }
+        ]
+    },
+    "tr": {
+        "skill": [
+            {
+                "id": 1,
+                "title": "Java Script",
+                "desc": "Modern web uygulamaları için temiz, okunabilir ve sürdürülebilir JavaScript kodları yazıyorum. Performans ve kullanıcı deneyimini ön planda tutarım."
+            },
+            {
+                "id": 2,
+                "title": "React.JS",
+                "desc": "Bileşen tabanlı mimariyle ölçeklenebilir ve kullanıcı odaklı arayüzler geliştiriyorum."
+            },
+            {
+                "id": 3,
+                "title": "Node.JS",
+                "desc": "Frontend projelerini destekleyecek basit ve verimli backend çözümleri geliştiriyorum."
+            }
+        ]
+    }
+}
