@@ -1,11 +1,26 @@
 import profile from "../data/profile.json"
 import data from "../data/data.json"
 import { useSetting } from "../SettingsContext";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 export const Header = () => {
   const {state} = useSetting();
 
   const lang = data[state.language];
+
+  async function hireMeRequest() {
+    await axios
+      .post("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => {
+        console.log(response);
+        toast.success("İstek başarıyla gönderildi!");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("İstek gönderilemedi!");
+      });
+  };
 
   return (
     <>
@@ -30,12 +45,13 @@ export const Header = () => {
           {lang.profile}
         </a>
 
-        <a
+        <button
           href="#"
-          className="font-medium text-[#3730A3] border border-[#3730A3] rounded-lg px-4 py-1"
+          className="font-medium text-[#3730A3] border border-[#3730A3] rounded-lg px-4 py-1 cursor-pointer"
+          onClick={hireMeRequest}
         >
           {lang.hire}
-        </a>
+        </button>
       </div>
       </div>
     </>

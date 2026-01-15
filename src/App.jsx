@@ -6,24 +6,32 @@ import { Skills } from "./components/Skills";
 import { Profile } from "./components/Profile";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
-import { SettingsProvider } from "./SettingsContext";
+import { SettingsProvider, useSetting } from "./SettingsContext";
+import { ToastContainer } from "react-toastify";
 
-function App() {
+function AppContent() {
+  const { state } = useSetting();
+
   return (
     <>
-      <SettingsProvider>
-        <div className="min-h-screen mx-auto w-full max-w-screen-xl px-4 max-sm:px-4 max-sm:overflow-x-hidden">
-          <Mode />
-          <Header />
-          <MainProfile />
-          <Skills />
-          <Profile />
-          <Projects />
-          <Footer />
-        </div>
-      </SettingsProvider>
+      <ToastContainer theme={state.darkMode ? "dark" : "light"} />
+      <div className="min-h-screen mx-auto w-full max-w-screen-xl px-4 max-sm:px-4 max-sm:overflow-x-hidden">
+        <Mode />
+        <Header />
+        <MainProfile />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </div>
     </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <SettingsProvider>
+      <AppContent />
+    </SettingsProvider>
+  );
+}
