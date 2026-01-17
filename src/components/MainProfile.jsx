@@ -12,7 +12,10 @@ export const MainProfile = () => {
 
   async function hireMeRequest() {
     await axios
-      .post("https://jsonplaceholder.typicode.com/posts")
+      .post("https://jsonplaceholder.typicode.com/posts", {
+        userId: Math.floor(Math.random() * 1000),
+        name: profile.name
+      })
       .then((response) => {
         console.log(response);
         toast.success("İstek başarıyla gönderildi!");
