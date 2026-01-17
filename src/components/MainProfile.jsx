@@ -75,7 +75,7 @@ export const MainProfile = () => {
             <div className="shrink-0">
               <img
                 className="w-[476px] h-[375px] rounded-2xl object-cover"
-                src="src/images/profile.png"
+                src="public/images/profile.png"
                 alt="Profile"
               />
             </div>
